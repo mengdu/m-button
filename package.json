@@ -1,9 +1,8 @@
 {
-  "name": "m-button",
+  "name": "vue-m-button",
   "version": "1.0.0",
   "description": "A button component for vue.",
   "author": "lanyueos@qq.com",
-  "private": true,
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {

@@ -10,9 +10,13 @@ Button常用的操作按钮。
 ## use
 
 
+```ls
+npm install vue-m-button
+```
+
 ```js
-import MButton from 'm-button'
-import 'm-button/dist/css/default.css'
+import MButton from 'vue-m-button'
+import 'vue-m-button/dist/css/default.css'
 
 Vue.use(MButton)
 ```
