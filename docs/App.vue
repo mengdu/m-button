@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <fork-link repo="https://github.com/mengdu/vue-component-devtool" />
+    <fork-link :repo="repo" />
     <header>
       <img src="./assets/logo.png">
       <h1 style="font-weight: 100">m-button 按钮组件</h1>
       <div style="margin-bottom: 50px;">
-        <a href="https://github.com/mengdu/vue-component-devtool" target="_blank"><m-button type="info" size="large" round>Github</m-button></a>
+        <a :href="repo" target="_blank"><m-button type="info" size="large" round>Github</m-button></a>
         &nbsp;
         <a href="#button-zhi-chi-5-chong-zhu-ti-lei-xing"><m-button type="success" size="large" plain round>Example</m-button></a>
       </div>
@@ -23,6 +23,7 @@ import LayoutFooter from './components/footer'
 import ForkLink from './components/fork-link'
 import Readme from '~/README.md'
 import Doc from './doc.md'
+import pkg from '~/package.json'
 
 export default {
   name: 'App',
@@ -31,6 +32,16 @@ export default {
     Readme,
     LayoutFooter,
     ForkLink
+  },
+  data () {
+    return {
+      pkg
+    }
+  },
+  computed: {
+    repo () {
+      return pkg.repository.url.replace(/git\+/, '')
+    }
   }
 }
 </script>

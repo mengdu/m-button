@@ -58,5 +58,5 @@ Vue.use(MButton)
 | disabled  | 是否禁用状态    | boolean   | —   | false   |
 | active  | 焦点状态    | boolean   | —   | false   |
 | effect  | 焦点涟漪效果    | boolean   | —   | true   |
-| router  | 焦点状态    | path  | —   | —  |
+| router  | 路由    | path  | —   | —  |
 

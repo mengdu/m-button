@@ -5,6 +5,14 @@
   "author": "lanyueos@qq.com",
   "license": "MIT",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mengdu/m-button"
+  },
+  "bugs": {
+    "url": "https://github.com/mengdu/m-button/issues"
+  },
+  "homepage": "https://mengdu.github.io/m-button/example/",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
