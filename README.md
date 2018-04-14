@@ -3,6 +3,10 @@
 
 Button常用的操作按钮。
 
+例子：[Example](https://mengdu.github.io/m-button/example/)
+
+打包工具： [vue-component-devtool](https://github.com/mengdu/vue-component-devtool)
+
 ## use
 
 
