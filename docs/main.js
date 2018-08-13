@@ -4,7 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import DemoBlock from './components/demo-block'
 import MButton from '@/index'
+// import MButton from '@/../index'
 
+// console.log(MButton, MButtonGroup)
 Vue.use(MButton)
 
 Vue.component('DemoBlock', DemoBlock)
