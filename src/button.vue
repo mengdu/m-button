@@ -62,6 +62,10 @@ export default {
   },
   methods: {
     handleClick (e) {
+      this.clicked = true
+      setTimeout(() => {
+        this.clicked = false
+      }, 350)
       // 跳转路由
       if (this.router && this.$router) {
         if (typeof this.router === 'string') {
@@ -72,11 +76,7 @@ export default {
           return false
         }
       }
-      this.clicked = true
       this.$emit('click', e)
-      setTimeout(() => {
-        this.clicked = false
-      }, 500)
     }
   }
 }
