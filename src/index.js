@@ -1,6 +1,6 @@
 import MButton from './button'
 import MButtonGroup from './button-group'
-import './btn.less'
+import './button.less'
 
 MButton.install = function (Vue) {
   Vue.component(MButton.name, MButton)

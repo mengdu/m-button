@@ -11,12 +11,14 @@
 @btn-success-bgcolor: #03B976;
 @btn-danger-bgcolor: #F56C6C;
 @btn-warning-bgcolor: #F9AA40;
+@btn-white-bgcolor: #FFF;
 
 @info-disabled-bgcolor: #6BCCEA;
 @primary-disabled-bgcolor: #9E98CE;
 @success-disabled-bgcolor: #56ceb0;
 @danger-disabled-bgcolor: #FAB6B6;
 @warning-disabled-bgcolor: #ffc576;
+@white-disabled-bgcolor: #ffc576;
 
 @color-default-light: #868E96;
 @color-primary-light: #8E74B4;
@@ -24,6 +26,7 @@
 @color-success-light: #05a56a;
 @color-danger-light: #F78989;
 @color-warning-light: #FAB458;
+@color-white-light: #f1f1f1;
 
 a.@{btn-name}{
   text-decoration: none;
@@ -50,12 +53,7 @@ a.@{btn-name}{
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   
   user-select: none;
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select:none;
-  -khtml-user-select:none;
-  -webkit-user-select:none;
-  -ms-user-select:none;
+
   &:hover{
     background-color: @color-default-light;
     border:solid 1px @color-default-light;
@@ -122,7 +120,19 @@ a.@{btn-name}{
   .make-btn-theme(success);
   .make-btn-theme(danger);
   .make-btn-theme(warning);
+  .make-btn-theme(white);
   
+  &&-white {
+    border-color: #dcdee0;
+    color: #32383e;
+    
+    &:hover {
+      color: #409eff;
+      border-color: #c6e2ff;
+      background-color: #ecf5ff;
+    }
+  }
+
   .make-btn-clicked();
 
   &&-type-plain{
@@ -138,6 +148,7 @@ a.@{btn-name}{
     .make-btn-type-plain-theme(success);
     .make-btn-type-plain-theme(danger);
     .make-btn-type-plain-theme(warning);
+    .make-btn-type-plain-theme(white);
   }
 }
 

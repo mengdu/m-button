@@ -20,6 +20,7 @@
 
 ```html
 <m-button>Default</m-button>
+<m-button type="white">White</m-button>
 <m-button type="info">Info</m-button>
 <m-button type="primary">Primary</m-button>
 <m-button type="warning">Warning</m-button>
